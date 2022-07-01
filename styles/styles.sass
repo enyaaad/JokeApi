@@ -12,7 +12,7 @@ body
     display: flex
     flex-direction: column
     align-items: center
-    margin-top: 15%
+    margin-top: 13%
     font-family: Tahoma, Geneva, sans-serif
     font-size: 15px
     letter-spacing: 2px
@@ -34,7 +34,6 @@ body
 div
   margin-top: 15px
   margin-bottom: 15px
-
 .button-4
   appearance: none
   background-color: #FAFBFC
@@ -90,3 +89,28 @@ div
 
 .button-4::-webkit-details-marker
   display: none
+
+input[type=checkbox]
+  appearance: none
+  -webkit-appearance: none
+  -moz-appearance: none
+  position: absolute
+
+label[class=checkbox]
+  display: inline-flex
+  align-items: center
+  cursor: pointer
+
+.checkbox_box
+  width: 1em
+  height: 1em
+  border: 2px solid #2e7dba
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-right: 10px
+  flex-shrink: 0
+
+input[type=checkbox]:checked + .checkbox_box
+  border-color: #2e7dba
+  background: #2e7dba url("../img/check_mark.svg")

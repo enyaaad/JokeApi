@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Joke-API</title>
     <script type="text/javascript" src="js/script.js"></script>
+    <link rel="shortcut icon" href="img/favicon-32x32.png">
     <link rel="stylesheet" href="styles/null.css" >
     <link rel="stylesheet" href="styles/styles.css" >
 </head>
@@ -25,22 +26,58 @@
 
     <h2>BlackList:</h2>
     <div class="filter">
-            <label><input type="checkbox" class="filtercheckbox" id="nsfwCB" value="nsfw">nsfw</label>
-            <label><input type="checkbox" class="filtercheckbox" id="religCB" value="religious">religious</label>
-            <label><input type="checkbox" class="filtercheckbox" id="politCB" value="political">political</label>
-            <label><input type="checkbox" class="filtercheckbox" id="racistCB" value="racist">racist</label>
-            <label><input type="checkbox" class="filtercheckbox" id="sexistCB" value="sexist">sexist</label>
-            <label><input type="checkbox" class="filtercheckbox" id="explicitCB" value="explicit">explicit</label>
+            <label class="checkbox" for="nsfwCB">
+                <input type="checkbox" class="filtercheckbox" id="nsfwCB" value="nsfw">nsfw
+                <span class="checkbox_box"></span>
+            </label>
+            <label class="checkbox" for="religCB">
+                <input type="checkbox" class="filtercheckbox" id="religCB" value="religious">religious
+                <span class="checkbox_box"></span>
+            </label>
+            <label class="checkbox" for="politCB">
+                <input type="checkbox" class="filtercheckbox" id="politCB" value="political">political
+                <span class="checkbox_box"></span>
+            </label>
+            <label class="checkbox" for="racistCB">
+                <input type="checkbox" class="filtercheckbox" id="racistCB" value="racist">racist
+                <span class="checkbox_box"></span>
+            </label>
+            <label class="checkbox" for="sexistCB">
+                <input type="checkbox" class="filtercheckbox" id="sexistCB" value="sexist">sexist
+                <span class="checkbox_box"></span>
+            </label>
+            <label class="checkbox" for="explicitCB">
+                <input type="checkbox" class="filtercheckbox" id="explicitCB" value="explicit">explicit
+                <span class="checkbox_box"></span>
+            </label>
     </div>
 
     <h2>Genres:</h2>
     <div class="genre">
-            <label> <input type="checkbox" class="genrecheckbox" id="programCB" value="Programming">programming</label>
-            <label> <input type="checkbox" class="genrecheckbox" id="miscCB" value="Miscellaneous">misc</label>
-            <label><input type="checkbox" class="genrecheckbox" id="darkCB" value="Dark">dark</label>
-            <label><input type="checkbox" class="genrecheckbox" id="punCB" value="Pun">pun</label>
-            <label><input type="checkbox" class="genrecheckbox" id="spookyCB" value="Spooky">spooky</label>
-            <label><input type="checkbox" class="genrecheckbox" id="christmasCB" value="Christmas">christmas</label>
+            <label class="checkbox" for="programCB">
+                <input type="checkbox" class="genrecheckbox" id="programCB" value="Programming">programming
+                <span class="checkbox_box"></span>
+            </label>
+            <label class="checkbox" for="miscCB">
+                <input type="checkbox" class="genrecheckbox" id="miscCB" value="Miscellaneous">misc
+                <span class="checkbox_box"></span>
+            </label>
+            <label class="checkbox" for="darkCB">
+                <input type="checkbox" class="genrecheckbox" id="darkCB" value="Dark">dark
+                <span class="checkbox_box"></span>
+            </label>
+            <label class="checkbox" for="punCB">
+                <input type="checkbox" class="genrecheckbox" id="punCB" value="Pun">pun
+                <span class="checkbox_box"></span>
+            </label>
+            <label class="checkbox" for="spookyCB">
+                <input type="checkbox" class="genrecheckbox" id="spookyCB" value="Spooky">spooky
+                <span class="checkbox_box"></span>
+            </label>
+            <label class="checkbox" for="christmasCB">
+                <input type="checkbox" class="genrecheckbox" id="christmasCB" value="Christmas">christmas
+                <span class="checkbox_box"></span>
+            </label>
     </div>
 </div>
 </body>
