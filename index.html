@@ -11,6 +11,12 @@
 <body>
 <div class="mainBlock">
     <div class="card">
+        <div class="search" id="search">
+            <label>
+                <input type="text" id="search-bar" placeholder="Word">
+            </label>
+            <button onclick="fetchWeather()" class="button-4">Search</button>
+        </div>
         <div class="topElems">
             <h2>BlackList:</h2>
             <div class="filter">
@@ -74,17 +80,11 @@
                     </label>
                 </div>
             </div>
-            <div class="search" id="search">
-                <label>
-                    <input type="text" id="search-bar" placeholder="Word">
-                </label>
-                <button onclick="fetchWeather()" class="button-4">Search</button>
-            </div>
         </div>
 
         <div class="joke loading" id="joke">
-            <h2 class="categoryName">Category: </h2>
-            <h2 class="jokeText">Joke: </h2>
+            <h2 class="categoryName"></h2>
+            <h2 class="jokeText"></h2>
         </div>
         <div>
         </div>
