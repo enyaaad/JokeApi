@@ -1,1 +1,278 @@
-body{background:#272727;min-height:100vh;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}body .mainBlock{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}body .mainBlock h2{font-family:system-ui,sans-serif;font-size:1rem;font-weight:bold;line-height:1.1}body .mainBlock .card{padding:15px 15px 15px 15px;border:10px solid #B24000;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:15px;background-color:#212121;color:#D9D9D9;font-family:Inter,sans-serif}body .mainBlock .card .topElems{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}body .mainBlock .card .topElems .filter{display:-webkit-box;display:-ms-flexbox;display:flex}body .mainBlock .card .topElems .filter .filter-left{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin:5px}body .mainBlock .card .topElems .filter .filter-right{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin:5px}body .mainBlock .card .topElems .genre{display:-webkit-box;display:-ms-flexbox;display:flex}body .mainBlock .card .topElems .genre .genre-left{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin:5px}body .mainBlock .card .topElems .genre .genre-right{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin:5px}body .mainBlock .card input[type=text]{padding:12px 20px;margin:8px 0;display:inline-block;border:1px solid #ccc;border-radius:4px}.button-4{-webkit-appearance:none;-moz-appearance:none;appearance:none;background-color:#FAFBFC;border:1px solid rgba(27,31,35,0.15);border-radius:6px;-webkit-box-shadow:rgba(27,31,35,0.04) 0 1px 0,rgba(255,255,255,0.25) 0 1px 0 inset;box-shadow:rgba(27,31,35,0.04) 0 1px 0,rgba(255,255,255,0.25) 0 1px 0 inset;-webkit-box-sizing:border-box;box-sizing:border-box;color:#24292E;cursor:pointer;display:inline-block;font-family:-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";font-size:14px;font-weight:500;line-height:20px;list-style:none;padding:6px 16px;position:relative;-webkit-transition:background-color 0.2s cubic-bezier(0.3,0,0.5,1);transition:background-color 0.2s cubic-bezier(0.3,0,0.5,1);-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-user-select:none;-ms-touch-action:manipulation;touch-action:manipulation;vertical-align:middle;white-space:nowrap;word-wrap:break-word}.button-4:hover{background-color:#F3F4F6;text-decoration:none;-webkit-transition-duration:0.1s;transition-duration:0.1s}.button-4:disabled{background-color:#FAFBFC;border-color:rgba(27,31,35,0.15);color:#959DA5;cursor:default}.button-4:active{background-color:#EDEFF2;-webkit-box-shadow:rgba(225,228,232,0.2) 0 1px 0 inset;box-shadow:rgba(225,228,232,0.2) 0 1px 0 inset;-webkit-transition:none 0s;transition:none 0s}.button-4:focus{outline:1px transparent}.button-4:before{display:none}.button-4::-webkit-details-marker{display:none}input[type=checkbox]{appearance:none;-webkit-appearance:none;-moz-appearance:none;position:absolute}label[class=checkbox]{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;cursor:pointer;margin:5px}.checkbox_box{width:1em;height:1em;border:2px solid #D9D9D9;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-right:10px;-ms-flex-negative:0;flex-shrink:0;margin-left:10px}input[type=checkbox]:checked+.checkbox_box{border-color:#243788;background:#D9D9D9 url("../img/check_mark.svg")}@media screen and (max-device-width:480px){body h2{max-width:500px}}
+body {
+  background: #272727;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .mainBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .mainBlock h2 {
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.1;
+}
+body .mainBlock .card {
+  padding: 30px;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  border: 10px solid #B24000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  background-color: #212121;
+  color: #D9D9D9;
+  font-family: Inter, sans-serif;
+}
+body .mainBlock .card .joke {
+  -webkit-animation: fadeOut 1s;
+          animation: fadeOut 1s;
+}
+body .mainBlock .card .Fadein {
+  -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+}
+body .mainBlock .card .search {
+  margin-bottom: 30px;
+}
+body .mainBlock .card .search .button-4 {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  -webkit-box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+          box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  -webkit-transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+body .mainBlock .card .search .button-4:hover {
+  background-color: #F3F4F6;
+  text-decoration: none;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+body .mainBlock .card .search .button-4:disabled {
+  background-color: #FAFBFC;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959DA5;
+  cursor: default;
+}
+body .mainBlock .card .search .button-4:active {
+  background-color: #EDEFF2;
+  -webkit-box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+          box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  -webkit-transition: none 0s;
+  transition: none 0s;
+}
+body .mainBlock .card .search .button-4:focus {
+  outline: 1px transparent;
+}
+body .mainBlock .card .search .button-4:before {
+  display: none;
+}
+body .mainBlock .card .search .button-4::-webkit-details-marker {
+  display: none;
+}
+body .mainBlock .card .topElems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-bottom: 30px;
+}
+body .mainBlock .card .topElems input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+}
+body .mainBlock .card .topElems input[type=checkbox]:checked + .checkbox_box {
+  border-color: #B24000;
+  background: #D9D9D9 url("../img/check_mark.svg");
+  background-size: contain;
+}
+body .mainBlock .card .topElems input[type=checkbox]:hover + .checkbox_box {
+  background-color: #D9D9D9;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+body .mainBlock .card .topElems label[class=checkbox] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin: 5px;
+}
+body .mainBlock .card .topElems .checkbox_box {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 1em;
+  height: 1em;
+  border: 2px solid #D9D9D9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+body .mainBlock .card .topElems .filterSec .filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body .mainBlock .card .topElems .filterSec .filter .filter-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5px;
+}
+body .mainBlock .card .topElems .filterSec .filter .filter-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5px;
+}
+body .mainBlock .card .topElems .genreSec .genre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+body .mainBlock .card .topElems .genreSec .genre .genre-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5px;
+}
+body .mainBlock .card .topElems .genreSec .genre .genre-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5px;
+}
+body .mainBlock .card input[type=text] {
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+@media screen and (max-device-width: 480px) {
+  body h2 {
+    max-width: 500px;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

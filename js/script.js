@@ -1,4 +1,5 @@
-async function fetchWeather() {
+async function fetchJoke() {
+    toggleFade('joke');
 
     let searchstring = document.getElementById("search-bar").value;
     const filterCb = checkBoxes('.filtercheckbox').join(',');
@@ -50,16 +51,19 @@ async function displayJoke(data) {
     }
     else{
         if(data.setup === undefined){
-            document.querySelector(".categoryName").innerText = "Error";
-            document.querySelector(".jokeText").innerText = "there's no jokes with this word";
+            document.querySelector(".categoryName").innerText = "";
+            document.querySelector(".jokeText").innerText = "Sorry, but there's no jokes with this word";
         }
         else{
             document.querySelector(".categoryName").innerText = "Category: "+ data.category;
             document.querySelector(".jokeText").innerText = "Joke: " + data.setup + '\n' + data.delivery;
         }
     }
-
-
-
+}
+function toggleFade(elem){
+    if(document.getElementById(elem).classList.contains("Fadein"))
+        document.getElementById(elem).classList.remove("Fadein");
+    else
+        document.getElementById(elem).classList.add("Fadein")
 }
 
