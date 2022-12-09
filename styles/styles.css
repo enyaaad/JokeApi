@@ -47,14 +47,6 @@ body .mainBlock .card {
   color: #D9D9D9;
   font-family: Inter, sans-serif;
 }
-body .mainBlock .card .joke {
-  -webkit-animation: fadeOut 1s;
-          animation: fadeOut 1s;
-}
-body .mainBlock .card .Fadein {
-  -webkit-animation: fadeIn 2s;
-          animation: fadeIn 2s;
-}
 body .mainBlock .card .search {
   margin-bottom: 30px;
 }
@@ -242,37 +234,5 @@ body .mainBlock .card input[type=text] {
 @media screen and (max-device-width: 480px) {
   body h2 {
     max-width: 500px;
-  }
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
