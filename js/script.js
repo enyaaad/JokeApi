@@ -1,5 +1,4 @@
 async function fetchJoke() {
-    toggleFade('joke');
 
     let searchstring = document.getElementById("search-bar").value;
     const filterCb = checkBoxes('.filtercheckbox').join(',');
